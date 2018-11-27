@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLCamVideoPreview", "GLCamVideoPreview\GLCamVideoPreview.csproj", "{B1C02E82-CCF6-49E4-9A94-C51B30D7CE24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1C02E82-CCF6-49E4-9A94-C51B30D7CE24}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{B1C02E82-CCF6-49E4-9A94-C51B30D7CE24}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{B1C02E82-CCF6-49E4-9A94-C51B30D7CE24}.Release|iPhone.ActiveCfg = Release|iPhone
+		{B1C02E82-CCF6-49E4-9A94-C51B30D7CE24}.Release|iPhone.Build.0 = Release|iPhone
+		{B1C02E82-CCF6-49E4-9A94-C51B30D7CE24}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{B1C02E82-CCF6-49E4-9A94-C51B30D7CE24}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{B1C02E82-CCF6-49E4-9A94-C51B30D7CE24}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{B1C02E82-CCF6-49E4-9A94-C51B30D7CE24}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
