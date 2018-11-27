@@ -82,9 +82,6 @@ namespace GLCamVideoPreview
             return view;
         }
 
-        //https://github.com/ZhaonanLi/ios-camera-video-preview-glkview/blob/master/ios-camera-video-preview-glkview/ViewController.swift
-        //https://github.com/xamarin/ios-samples/blob/master/GLCameraRipple/RippleViewController.cs#L205
-        //https://gist.github.com/rsaunders100/6094708
         void SetupAVCapture()
         {
             _cameraSession = new AVCaptureSession();
