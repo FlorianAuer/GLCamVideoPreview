@@ -28,7 +28,7 @@ namespace GLCamVideoPreview
         {
             base.ViewDidLoad();
 
-            _glContext = new EAGLContext(EAGLRenderingAPI.OpenGLES2);
+            _glContext = new EAGLContext(EAGLRenderingAPI.OpenGLES3);
             _ciContext = CIContext.FromContext(_glContext);
             _glView = MakeGLKView();
 
@@ -87,7 +87,7 @@ namespace GLCamVideoPreview
             _cameraSession = new AVCaptureSession();
 
             _cameraSession.BeginConfiguration();
-            _cameraSession.SessionPreset = AVCaptureSession.PresetMedium;
+            _cameraSession.SessionPreset = AVCaptureSession.Preset1920x1080;
             var captureDevice = AVCaptureDevice.GetDefaultDevice(AVMediaTypes.Video) as AVCaptureDevice;
 
             NSError error;
