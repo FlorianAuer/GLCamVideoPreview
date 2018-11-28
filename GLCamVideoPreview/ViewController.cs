@@ -12,6 +12,7 @@ using UIKit;
 
 namespace GLCamVideoPreview
 {
+    [Register("ViewController")]
     public partial class ViewController : UIViewController
     {
         GLKView _glView;
