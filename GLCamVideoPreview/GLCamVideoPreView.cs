@@ -110,6 +110,7 @@ namespace GLCamVideoPreview
             _cameraSession.CommitConfiguration();
         }
     }
+    
 
     class DataOutputDelegate : AVCaptureVideoDataOutputSampleBufferDelegate
     {
@@ -131,7 +132,19 @@ namespace GLCamVideoPreview
             _glView = glKView;
             _ciContext = CIContext.FromContext(glContext);
         }
-
+        
+        /// <summary>
+        /// Methods for receiving sample buffers from and monitoring the status of a video data output.
+        /// If your application is causing samples to be dropped by retaining the provided 
+        /// CMSampleBufferRef objects for too long, but it needs access to the sample data 
+        /// for a long period of time, consider copying the data into a new buffer and then 
+        /// releasing the sample buffer (if it was previously retained) so that the memory 
+        /// it references can be reused.
+        /// https://stackoverflow.com/questions/30850676/avcaptureoutput-didoutputsamplebuffer-stops-getting-called
+        /// </summary>
+        /// <param name="captureOutput">Capture output.</param>
+        /// <param name="sampleBuffer">Sample buffer.</param>
+        /// <param name="connection">Connection.</param>
         public override void DidOutputSampleBuffer(
             AVCaptureOutput captureOutput, CMSampleBuffer sampleBuffer, AVCaptureConnection connection)
         {
